@@ -1,0 +1,157 @@
+
+:root {
+  --background-color: #f0f4f8;
+  --text-color: #333;
+  --button-background: #3498db;
+  --button-hover: #2980b9;
+  --delete-button-background: #e74c3c;
+  --delete-button-hover: #c0392b;
+  --input-border: #ccc;
+  --container-background: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --heading-color: #2c3e50; 
+  --todo-item-text: #333;   
+}
+
+
+.dark-mode {
+  --background-color: #333;
+  --text-color: #f0f4f8;
+  --button-background: #1e90ff;
+  --button-hover: #1c86ee;
+  --delete-button-background: #ff6347;
+  --delete-button-hover: #ff4500;
+  --input-border: #555;
+  --container-background: #444;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --heading-color: #ecf0f1; 
+  --todo-item-text: #ecf0f1; 
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: var(--container-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: background 0.3s, box-shadow 0.3s;
+ 
+}
+
+
+h1 {
+  color: var(--heading-color); 
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: var(--heading-color);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+
+input {
+  font-family: 'Roboto', sans-serif;
+ 
+  width: 95%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  color: var(--text-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  border: 1px solid var(--input-border);
+  transition: border-color 0.3s, background-color 0.3s,color 0.3s;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: var(--button-background);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+.todo-item {
+  padding: 20px;
+  border-bottom: 1px solid var(--input-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item h1,
+.todo-item h2 {
+  color: var(--todo-item-text);
+}
+
+button.delete {
+  background-color: var(--delete-button-background);
+  margin: 10px;
+}
+
+button.delete:hover {
+  background-color: var(--delete-button-hover);
+    
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+:root {
+  --icon-size: 40px;
+}
+
+.github {
+  position:relative ;
+display: flex;
+justify-content: center;
+text-align: center;
+  
+  font-size: var(--icon-size);
+}
+
+.github a {
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.github a:hover {
+  color: var(--button-background);
+}
+
+.dark-mode .github a {
+  color: var(--heading-color);
+}
+
+.dark-mode .github a:hover {
+  color: var(--button-hover);
+}
