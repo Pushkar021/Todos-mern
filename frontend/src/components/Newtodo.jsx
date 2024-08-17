@@ -8,7 +8,7 @@ export default function AddTodo({ refresh }) {
     if (title.value === "" || description.value === "") {
       alert("Fields can't be empty");
     } else {
-      fetch("https://todo-back-1.onrender.com/todo", {
+      fetch("URL", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
