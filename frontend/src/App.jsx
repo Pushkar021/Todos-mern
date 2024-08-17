@@ -12,7 +12,7 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const fetchTodos = () => {
-    fetch("https://todo-back-1.onrender.com/alltodo").then(async (data) => {
+    fetch("URL").then(async (data) => {
       const result = await data.json();
       setTodos(result.todos.x);
     });
