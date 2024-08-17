@@ -5,7 +5,7 @@ export default function Main({ todos, refresh }) {
     const todoId = event.target.id;
     if (event.target.innerHTML === "Already Completed") return;
     event.target.innerHTML = "Already Completed";
-    fetch("https://todo-back-1.onrender.com/completed", {
+    fetch("URL", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: todoId }),
@@ -16,7 +16,7 @@ export default function Main({ todos, refresh }) {
 
   async function handleDelete(event) {
     const todoId = event.target.id;
-    fetch("https://todo-back-1.onrender.com/delete", {
+    fetch("URL", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: todoId }),
