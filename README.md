@@ -2,7 +2,7 @@
 
 This is my first full-stack project using the MERN stack (MongoDB, Express, React, Node.js). It is a simple Todos app where users can add, delete, and mark tasks as complete.
 
-You can check out the live application here: [MERN Todos App](https://mern-todos-by-pushkar.netlify.app/)
+You can check out the live application here: [MERN Todos App](https://todos-frontend-eta.vercel.app/)
 
 ## Features
 
